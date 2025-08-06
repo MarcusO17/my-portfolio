@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Marcus Ong</a>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hello, I'm Marcus Ong</h1>
+                <h2>Hopeful ML Engineer</h2>
+                <p>Computer Science graduate building reliable and interpretable machine learning systems.</p>
+                <div class="social-links">
+                    <a href="https://github.com/MarcusO17" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/marcuso17" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:marcuso1710@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-pic">
+                    <!-- Addphoto -->
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <div class="btn-container">
+                    <button class="btn btn-primary">Download Resume</button>
+                    <button class="btn btn-primary">Let's Talk</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        My journey into Artificial Intelligence began not in a lecture hall, 
+                        but when I first stumbled upon a paper about Generative Adversarial Networks. T
+                        he idea that two neural networks could compete to create something entirely new was captivating, 
+                        and it sparked my passion for understanding not just how models work, but how they can be used to create and discover.
+                    </p>
+                    <p>
+                        At the [Your University Name], I channeled that curiosity into a formal foundation in Computer Science, 
+                        focusing my coursework on machine learning theory, data structures, and statistical analysis. I spent my time 
+                        diving deep into PyTorch and scikit-learn, working on projects that moved from theory to practice, and learning 
+                        how to wrangle real-world, messy data.
+                    </p>
+                    <p>
+                        Now, I'm driven to apply these skills to solve meaningful problems, particularly in the domain of 
+                        [Your Specific Interest, e.g., Responsible AI, MLOps, or AI for Healthcare]. I believe the best systems are not only powerful
+                        but also understandable and fair, and I'm eager to contribute to a team that shares that vision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Papers Section -->
+    <section id="papers" class="papers">
+        <div class="container">
+            <h2 class="section-title">Research Papers</h2>
+            <div class="papers-grid">
+                <div class="paper-item">
+                    <div class="paper-content">
+                        <h3 class="paper-title">Enhancing Personal Knowledge Management by Mitigating LLM Hallucinations with Retrieval-
+                        Augmented Generation</h3>
+                        <p class="paper-authors">Ge Ye Ong, Mohanan Vasuky</p>
+                        <p class="paper-venue">International Conference on Computer, Information Technology & Intelligent Computing 2025</p>
+                        <p class="paper-publisher">Accepted</p>
+                        <p class="paper-description">Brief description of the research contribution and key findings of your paper.</p>
+                        <div class="paper-links">
+                            <a href="#" class="paper-link">
+                                <i class="fas fa-external-link-alt"></i> Link
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-content">
+                        <h3 class="paper-title">Enhancing Data Quality in Image Pre-Processing: A Case Study on Plant Disease Classification</h3>
+                        <p class="paper-authors">Ge Ye Ong, Nurzulaikha Abdullah, Fakhitah Ridzuan, Wan Azani Mustafa, Laith H Alzubaidi</p>
+                        <p class="paper-venue"> International Conference for Technological Engineering and its Applications in Sustainable Development 2023</p>
+                        <p class="paper-publisher">IEEE</p>
+                        <p class="paper-description">Brief description of this research work and its contributions to the field.</p>
+                        <div class="paper-links">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10584873" class="paper-link">
+                                <i class="fas fa-external-link-alt"></i> Link
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card project-card-minimal">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Personal Knowledge Management System</h3>
+                            <i class="fas fa-brain project-icon"></i>
+                        </div>
+                        <p>A RAG-powered application that helps organize and retrieve personal knowledge while mitigating LLM hallucinations through document verification.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Vector DB</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card project-card-accent">
+                    <div class="project-content">
+                        <div class="project-category">Computer Vision</div>
+                        <h3>Plant Disease Classification</h3>
+                        <p>Deep learning model for automated plant disease detection with enhanced data preprocessing techniques to improve classification accuracy.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">ResNet</span>
+                            <span class="tech-tag">Data Augmentation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-file-pdf"></i> Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card project-card-border">
+                    <div class="project-content">
+                        <h3>Machine Learning Pipeline</h3>
+                        <p>End-to-end MLOps pipeline with automated training, validation, and deployment for scalable machine learning models.</p>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Accuracy</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50ms</span>
+                                <span class="stat-label">Latency</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">CI/CD</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Your City, Country</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
