@@ -97,8 +97,7 @@
             <div class="papers-grid">
                 <div class="paper-item">
                     <div class="paper-content">
-                        <h3 class="paper-title">Enhancing Personal Knowledge Management by Mitigating LLM Hallucinations with Retrieval-
-                        Augmented Generation</h3>
+                        <h3 class="paper-title">Enhancing Personal Knowledge Management by Mitigating LLM Hallucinations with Retrieval-Augmented Generation</h3>
                         <p class="paper-authors">Ge Ye Ong, Mohanan Vasuky</p>
                         <p class="paper-venue">International Conference on Computer, Information Technology & Intelligent Computing 2025</p>
                         <p class="paper-publisher">Accepted</p>
@@ -134,47 +133,25 @@
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
-                <div class="project-card project-card-minimal">
+                <div class="project-card project-card-border">
                     <div class="project-content">
+                        <div class="project-category">Large Language Models</div>
                         <div class="project-header">
-                            <h3>Personal Knowledge Management System</h3>
-                            <i class="fas fa-brain project-icon"></i>
+                            <h3>Experimental Evaluation of RAG Systems (FYP)</h3>
                         </div>
-                        <p>A RAG-powered application that helps organize and retrieve personal knowledge while mitigating LLM hallucinations through document verification.</p>
+                        <p class="project-desc">An in-depth Final Year Project that evaluates the performance of Retrieval-Augmented Generation (RAG) systems. 
+                            This study systematically benchmarks various LLMs (Llama3, Gemma2, GPT-4o Mini) across different RAG complexities (Naive vs. Advanced) 
+                            on standard datasets like SQuAD and MS MARCO, focusing on performance metrics and hallucination reduction.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
-                            <span class="tech-tag">LangChain</span>
-                            <span class="tech-tag">Vector DB</span>
-                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">LlamaIndex</span>
+                            <span class="tech-tag">llama.cpp</span>
+                            <span class="tech-tag">Groq</span>
+                            <span class="tech-tag">Pandas</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">
+                            <a href="https://github.com/MarcusO17/RAG-FYP2024" class="project-link">
                                 <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card project-card-accent">
-                    <div class="project-content">
-                        <div class="project-category">Computer Vision</div>
-                        <h3>Plant Disease Classification</h3>
-                        <p>Deep learning model for automated plant disease detection with enhanced data preprocessing techniques to improve classification accuracy.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">ResNet</span>
-                            <span class="tech-tag">Data Augmentation</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-file-pdf"></i> Paper
                             </a>
                         </div>
                     </div>
@@ -182,26 +159,42 @@
 
                 <div class="project-card project-card-border">
                     <div class="project-content">
-                        <h3>Machine Learning Pipeline</h3>
-                        <p>End-to-end MLOps pipeline with automated training, validation, and deployment for scalable machine learning models.</p>
-                        <div class="project-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">95%</span>
-                                <span class="stat-label">Accuracy</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">50ms</span>
-                                <span class="stat-label">Latency</span>
-                            </div>
-                        </div>
+                        <div class="project-category">Anomaly Detection</div>
+                        <h3>AI/ML Outlier Detection PoC</h3>
+                        <p>Engineered and deployed a full-stack anomaly detection PoC on AWS EC2, featuring a Dockerized application with a custom-made ML library 
+                            (Scikit-learn, Pandas) and an interactive Streamlit/Plotly dashboard, 
+                            all supported by a dedicated MLflow server tracking experiments to an RDS Serverless Aurora (PostgreSQL)
+                             database under CloudWatch monitoring.</p>
                         <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
                             <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">MLflow</span>
-                            <span class="tech-tag">CI/CD</span>
+                            <span class="tech-tag">MLFlow</span>
+                            <span class="tech-tag">Agile</span>
+                            <span class="tech-tag">ML System Design</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">
+                            <p class="unavail-link">Code is proprietary and not publicly available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card project-card-border">
+                    <div class="project-content">
+                        <div class="project-category">Big Data</div>
+                        <h3>COVID-19 Data Transparency Platform</h3>
+                        <p>Contributed to a end-to-end big data pipeline on Malaysia's COVID-19 Pandemic Open Data Dashboard by engineering the
+                            Python-based ML pipeline, training multiple time-series models; ARIMA, LSTM, Prophet, RFR, and more;
+                            and packaging the best-performing model for inference within a Next.js and Supabase BFF architecture</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Tensorflow</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Apache Airflow</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Supabase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.github.com/MarcusO17/5011-cem-ml" class="project-link">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                         </div>
